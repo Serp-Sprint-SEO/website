@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
-  apiVersion: "2025-03-31.basil",
+  apiVersion: "2025-06-30.basil",
 });
 
 type Data = { id: string } | { error: string };

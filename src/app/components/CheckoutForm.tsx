@@ -1,4 +1,4 @@
-import getStripe from "@/utils/getStripe";
+import getStripe from "@/app/utils/getStripe";
 import { useState } from "react";
 
 export default function CheckoutForm() {
