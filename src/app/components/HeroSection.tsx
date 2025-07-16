@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -18,7 +18,10 @@ export default function HeroSection() {
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+        <nav
+          aria-label="Global"
+          className="flex items-center justify-between p-6 lg:px-8"
+        >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ButterSync</span>
@@ -52,12 +55,19 @@ export default function HeroSection() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <a
+              href="#"
+              className="text-sm font-semibold leading-6 text-gray-900"
+            >
               Book a call <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>
-        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+        <Dialog
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+          className="lg:hidden"
+        >
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
@@ -118,10 +128,10 @@ export default function HeroSection() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Automation pros for your home service company
+              Stop burning $$$ on SEO that doesn&apos;t work
               {/* <a href="#" className="font-semibold text-indigo-600">
                 <span aria-hidden="true" className="absolute inset-0" />
                 Read more <span aria-hidden="true">&rarr;</span>
@@ -130,22 +140,28 @@ export default function HeroSection() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              We automate your home service business using AI workflows
+              Get a full SEO audit and all fixes done for you - starting at just
+              $500.
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Feel like your business is running you? Manual work, miscommunication, and fires
-              everywhere? Meet the firefighters. We help home service businesses put out fires using
-              AI workflows.
+              Why pay for SEO tools, hire developers and SEO experts, endure
+              project management headaches, and pray your team implements SEO
+              fixes correctly? SERP Sprint SEO audits your site, resolves
+              technical and non-technical errors, optimizes content for humans
+              and AI, and hands you a SERP-dominating machine.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Book a call
+                Book a free consultation call
               </a>
-              <a href="#video-note" className="text-sm font-semibold leading-6 text-gray-900">
-                Learn more <span aria-hidden="true">→</span>
+              <a
+                href="#video-note"
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                Book an SEO audit <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

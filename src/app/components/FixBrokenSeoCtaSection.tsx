@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function CtaSection() {
+export default function FixBrokenSeoCtaSection() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -26,19 +26,19 @@ export default function CtaSection() {
           </svg>
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Work with us
+              Your website&apos;s broken SEO can be fixed in the next 7 days
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Ready to boost your rankings and leave SEO headaches behind? Let
-              SERP Sprint SEO handle your audit and fixes for one simple price.
-              Take the first step toward dominating the search results today.
+              Ready to transform your website’s SEO and start seeing real
+              results? Partner with SERP Sprint SEO today for expert audits,
+              full fixes, and ongoing growth strategies, all handled for you.
             </p>
             <div className="mt-10">
               <a
                 href="#"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Book an SEO audit
+                Get an SEO audit
               </a>
             </div>
           </div>

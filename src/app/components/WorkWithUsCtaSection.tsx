@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function CtaSection() {
+export default function WorkWithUsCtaSection() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">

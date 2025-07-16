@@ -1,56 +1,41 @@
 const people = [
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    name: "Zakki Sohail",
+    role: "Co-Founder / CEO",
+    description:
+      "With nearly a decade of hands-on SEO experience, Zakki has orchestrated SEO turnarounds for hundreds of brands – from startups to well-established companies.",
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: 'Michael Foster',
-    role: 'Co-Founder / CTO',
+    name: "Arslan Khalid",
+    role: "Co-Founder / CTO",
+    description:
+      "Bringing more than 7 years of expertise in development and design, Arsalan rebuilds websites that Google loves. His hybrid dev-SEO approach slashes load times while crushing Core Web Vitals.",
     imageUrl:
-      'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
-  {
-    name: 'Dries Vincent',
-    role: 'Business Relations',
-    imageUrl:
-      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Lindsay Walton',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Courtney Henry',
-    role: 'Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Tom Cook',
-    role: 'Director of Product',
-    imageUrl:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-]
+];
 
 export default function TeamSection() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
-        <div className="max-w-xl">
-          <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
-            Meet our leadership
+    <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
+      <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
+      <div className="mx-auto max-w-7xl flex flex-col gap-10 px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 text-center sm:text-4xl">
+            Meet your SEO sprinters
           </h2>
-          <p className="mt-6 text-lg/8 text-gray-600">
-            We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-            best results for our clients.
+          <p className="mt-6 text-lg/8 text-center text-gray-600">
+            We’re a dynamic group of individuals who are passionate about what
+            we do and dedicated to delivering the best results for our clients.
           </p>
         </div>
-        <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+        <ul
+          role="list"
+          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+        >
           {people.map((person) => (
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
@@ -60,8 +45,15 @@ export default function TeamSection() {
                   className="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
                 />
                 <div>
-                  <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">{person.name}</h3>
-                  <p className="text-sm/6 font-semibold text-indigo-600">{person.role}</p>
+                  <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
+                    {person.name}
+                  </h3>
+                  <p className="text-sm/6 font-semibold text-indigo-600">
+                    {person.role}
+                  </p>
+                  <p className="text-sm/6 text-gray-700">
+                    {person.description}
+                  </p>
                 </div>
               </div>
             </li>
@@ -69,5 +61,5 @@ export default function TeamSection() {
         </ul>
       </div>
     </div>
-  )
+  );
 }

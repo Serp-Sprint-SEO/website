@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function CtaSection() {
+export default function SimpleOfferCtaSection() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -26,19 +26,21 @@ export default function CtaSection() {
           </svg>
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Work with us
+              If you can do simple maths, SERP Sprint&apos;s offer is a
+              no-brainer
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Ready to boost your rankings and leave SEO headaches behind? Let
-              SERP Sprint SEO handle your audit and fixes for one simple price.
-              Take the first step toward dominating the search results today.
+              Why spend thousands on tools, freelancers, and uncertain results
+              when SERP Sprint delivers a full audit plus all fixes for an
+              affordable price? It’s simple math, greater value, less hassle,
+              better rankings. All done in just 7 days!
             </p>
             <div className="mt-10">
               <a
                 href="#"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Book an SEO audit
+                Audit my site
               </a>
             </div>
           </div>
