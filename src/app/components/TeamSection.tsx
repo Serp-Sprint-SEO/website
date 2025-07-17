@@ -28,8 +28,10 @@ export default function TeamSection() {
             Meet your SEO sprinters
           </h2>
           <p className="mt-6 text-lg/8 text-center text-gray-600">
-            We’re a dynamic group of individuals who are passionate about what
-            we do and dedicated to delivering the best results for our clients.
+            At SERP Sprint, we combine deep SEO and technical expertise to
+            deliver real results. You get hands-on attention, proven strategies,
+            and a dedicated team focused on helping your site climb the
+            rankings.
           </p>
         </div>
         <ul
