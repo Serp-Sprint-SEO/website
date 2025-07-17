@@ -98,13 +98,15 @@ export default function FaqSection() {
     <div id="faq" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:max-w-md">
-            <h2 className="mt-2 text-2xl font-bold tracking-tight text-gray-900">
-              Frequently asked questions
-            </h2>
-            <p className="mt-4 text-base font-light leading-7 text-gray-600">
-              Find answers to the question we get asked the most
-            </p>
+          <div className="lg:max-w-md relative">
+            <div className="lg:sticky lg:top-4">
+              <h2 className="mt-2 text-2xl font-bold tracking-tight text-gray-900">
+                Frequently asked questions
+              </h2>
+              <p className="mt-4 text-base font-light leading-7 text-gray-600">
+                Find answers to the question we get asked the most
+              </p>
+            </div>
           </div>
           <div>
             <AccordionRoot
