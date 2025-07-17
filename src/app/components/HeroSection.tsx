@@ -24,12 +24,12 @@ export default function HeroSection() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">ButterSync</span>
+              <span className="sr-only">SERP Sprint</span>
               <Image
                 src="/serp-sprint-logo.png"
                 width={150}
                 height={25.63}
-                alt="ButterSync Logo"
+                alt="SERP Sprint Logo"
               />
             </a>
           </div>
@@ -72,7 +72,7 @@ export default function HeroSection() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">SERP Sprint</span>
                 <img
                   alt=""
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -101,14 +101,6 @@ export default function HeroSection() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div>
               </div>
             </div>
           </DialogPanel>
@@ -132,10 +124,6 @@ export default function HeroSection() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Stop burning $$$ on SEO that doesn&apos;t work
-              {/* <a href="#" className="font-semibold text-indigo-600">
-                <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a> */}
             </div>
           </div>
           <div className="text-center">

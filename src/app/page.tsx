@@ -11,21 +11,24 @@ import WorkWithUsCtaSection from "@/app/components/WorkWithUsCtaSection";
 import SimpleOfferCtaSection from "@/app/components/SimpleOfferCtaSection";
 import SuperchargeWebsiteSeoCtaSection from "@/app/components/SuperchargeWebsiteSeoCtaSection";
 import FixBrokenSeoCtaSection from "@/app/components/FixBrokenSeoCtaSection";
+import WhyUsSection from "@/app/components/WhyUsSection";
+import DeliverableSection from "@/app/components/DeliverableSection";
+import PricingMatrixSection from "@/app/components/PricingMatrixSection";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
       <HowItWorksSection />
-      {/* Pricing Section (Table View) */}
+      <WhyUsSection />
       <SimpleOfferCtaSection />
       <WhyPartnerSection />
       {/* What issues are covered (Issue -> Description -> List) */}
       <BenefitsSection />
       <WhySeoNotWorkingSection />
       <SuperchargeWebsiteSeoCtaSection />
-      {/* Pricing Section (Table View) */}
-      {/* Deliverables section (20 deliverables) */}
+      <PricingMatrixSection />
+      <DeliverableSection />
       <FixBrokenSeoCtaSection />
       <FaqSection />
       <WorkWithUsCtaSection />
