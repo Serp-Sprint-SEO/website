@@ -95,7 +95,7 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <div id="faq" className="bg-white py-24 sm:py-32">
+    <div id="faq" className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl lg:max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:max-w-md relative">

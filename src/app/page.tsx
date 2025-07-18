@@ -14,6 +14,7 @@ import FixBrokenSeoCtaSection from "@/app/components/FixBrokenSeoCtaSection";
 import WhyUsSection from "@/app/components/WhyUsSection";
 import DeliverableSection from "@/app/components/DeliverableSection";
 import PricingMatrixSection from "@/app/components/PricingMatrixSection";
+import SolvedIssuesSection from "@/app/components/SolvedIssuesSection";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
       <WhyUsSection />
       <SimpleOfferCtaSection />
       <WhyPartnerSection />
-      {/* What issues are covered (Issue -> Description -> List) */}
+      <SolvedIssuesSection />
       <BenefitsSection />
       <WhySeoNotWorkingSection />
       <SuperchargeWebsiteSeoCtaSection />

@@ -72,7 +72,7 @@ export default function HowItWorksSection() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      Your website is audited.
+                      Your website is audited -
                     </strong>{" "}
                     We conduct a deep-dive SEO audit using industry-leading
                     tools and proven methods. Every technical, on-page, and
@@ -87,7 +87,7 @@ export default function HowItWorksSection() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      We fix all the issues for you.
+                      We fix all the issues for you -
                     </strong>{" "}
                     Our experts roll up their sleeves and resolve every problem
                     identified in the audit. You don’t have to hire developers,
@@ -102,7 +102,7 @@ export default function HowItWorksSection() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      You get actionable SEO tips.
+                      You get actionable SEO tips -
                     </strong>{" "}
                     Beyond the fixes, we deliver clear tips and strategies to
                     sustain your site’s growth and outperform competitors. We
