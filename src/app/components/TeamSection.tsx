@@ -11,7 +11,7 @@ const people = [
     name: "Arslan Khalid",
     role: "Co-Founder / CTO",
     description:
-      "Bringing more than 7 years of expertise in development and design, Arsalan rebuilds websites that Google loves. His hybrid dev-SEO approach slashes load times while crushing Core Web Vitals. Arsalan ensures that technical SEO issues are resolved seamlessly while enhancing site performance and user experience. His deep knowledge of web technologies provides a full-spectrum solution that optimizes both search engine rankings and website usability.",
+      "Bringing more than 7 years of expertise in development and design, Arslan rebuilds websites that Google loves. His hybrid dev-SEO approach slashes load times while crushing Core Web Vitals. Arslan ensures that technical SEO issues are resolved seamlessly while enhancing site performance and user experience. His deep knowledge of web technologies provides a full-spectrum solution that optimizes both search engine rankings and website usability.",
     imageUrl:
       "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
@@ -40,19 +40,23 @@ export default function TeamSection() {
         >
           {people.map((person) => (
             <li key={person.name}>
-              <div className="flex flex-row items-start gap-x-6">
-                <img
-                  alt={`${person.name} image`}
-                  src={person.imageUrl}
-                  className="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
-                />
+              <div className="flex flex-col items-start gap-y-6">
+                <div className="shrink-0 flex flex-row items-start gap-x-6">
+                  <img
+                    alt={`${person.name} image`}
+                    src={person.imageUrl}
+                    className="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
+                  />
+                  <div>
+                    <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
+                      {person.name}
+                    </h3>
+                    <p className="text-sm/6 font-semibold text-indigo-600">
+                      {person.role}
+                    </p>
+                  </div>
+                </div>
                 <div>
-                  <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
-                    {person.name}
-                  </h3>
-                  <p className="text-sm/6 font-semibold text-indigo-600">
-                    {person.role}
-                  </p>
                   <p className="text-sm/6 text-gray-700">
                     {person.description}
                   </p>
