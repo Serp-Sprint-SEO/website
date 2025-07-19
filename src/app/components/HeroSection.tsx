@@ -6,8 +6,8 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
+  { name: "How It Works", href: "#how-it-works" },
   { name: "Problem", href: "#problem" },
-  { name: "Our Solution", href: "#solution" },
   { name: "Pricing", href: "#pricing" },
   { name: "FAQ", href: "#faq" },
 ];
@@ -123,20 +123,18 @@ export default function HeroSection() {
         <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Stop burning $$$ on SEO that doesn&apos;t work
+              SEO audits with results, not just reports
             </div>
           </div>
           <div className="sm:text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Get a full SEO audit and all fixes done for you - starting at just
-              $500.
+              Rank Higher, Faster: Get a Full SEO Audit & Fixes Done for You
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Why pay for SEO tools, hire developers and SEO experts, endure
-              project management headaches, and pray your team implements SEO
-              fixes correctly? SERP Sprint SEO audits your site, resolves
-              technical and non-technical errors, optimizes content for humans
-              and AI, and hands you a SERP-dominating machine.
+              Stop wasting money on SEO tools, freelancers, or risky DIY fixes.
+              With SERP Sprint, you get a full SEO audit, expert fixes for every
+              technical and non-technical issue, and a clear path to higher
+              rankings, starting at just $500.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center justify-center gap-6">
               <a
@@ -149,7 +147,7 @@ export default function HeroSection() {
                 href="#video-note"
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
-                Book an SEO audit <span aria-hidden="true">→</span>
+                Start my SEO audit <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

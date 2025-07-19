@@ -164,7 +164,7 @@ export default function FaqSection() {
           </div>
           <div>
             <AccordionRoot
-              type="multiple"
+              type="single"
               className="mt-12 lg:mmt-0 grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none"
             >
               {faqs.map((faq, index) => (
@@ -174,9 +174,9 @@ export default function FaqSection() {
                   className="relative lg:pl-16"
                 >
                   <AccordionTrigger className="accordion-trigger flex items-center justify-between gap-10 w-full">
-                    <p className="text-base text-left font-semibold leading-7 text-gray-900">
+                    <h3 className="text-base text-left font-semibold leading-7 text-gray-900">
                       {faq.question}
-                    </p>
+                    </h3>
                     <ChevronUpIcon className="chevron-up-icon w-5 h-5 text-gray-900 shrink-0" />
                     <ChevronDownIcon className="chevron-down-icon w-5 h-5 text-indigo-900 shrink-0" />
                   </AccordionTrigger>

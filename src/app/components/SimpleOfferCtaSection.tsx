@@ -30,10 +30,10 @@ export default function SimpleOfferCtaSection() {
               no-brainer
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Why spend thousands on tools, freelancers, and uncertain results
-              when SERP Sprint delivers a full audit plus all fixes for an
-              affordable price? It’s simple math, greater value, less hassle,
-              better rankings. All done in just 7 days!
+              You can spend thousands and waste weeks doing SEO the hard way. Or
+              you can let our experts audit your site and fix every issue for
+              just $500, in 7 days. It&apos;s simple math: less money, less hassle,
+              better rankings.
             </p>
             <div className="mt-10">
               <a

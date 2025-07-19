@@ -44,7 +44,7 @@ export default function FixBrokenSeoCtaSection() {
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
             <Image
-              src="/CTA-image.png"
+              src="/serp-3.jpeg"
               width={1600}
               height={722}
               alt="CTA"

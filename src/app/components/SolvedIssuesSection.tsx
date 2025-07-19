@@ -84,7 +84,7 @@ const features = [
 
 export default function SolvedIssuesSection() {
   return (
-    <div id="solution" className="bg-slate-50 py-24 sm:py-32">
+    <div id="problem" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -95,10 +95,10 @@ export default function SolvedIssuesSection() {
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
             {features.map((feature) => (
               <div key={feature.title} className="relative border rounded-2xl p-8 bg-white shadow-xl">
-                <dt className="flex flex-col gap-4 text-base font-semibold leading-7 text-gray-900">
+                <h2 className="flex flex-col gap-4 text-base font-semibold leading-7 text-gray-900">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                     <feature.icon
                       aria-hidden="true"
@@ -106,10 +106,10 @@ export default function SolvedIssuesSection() {
                     />
                   </div>
                   {feature.title}
-                </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
+                </h2>
+                <p className="mt-2 text-base leading-7 text-gray-600">
                   {feature.description}
-                </dd>
+                </p>
                 <ul className="flex flex-col gap-4 mt-8">
                   {feature.list.map((item) => (
                     <li key={item} className="flex gap-2 items-center">
@@ -120,7 +120,7 @@ export default function SolvedIssuesSection() {
                 </ul>
               </div>
             ))}
-          </dl>
+          </div>
         </div>
       </div>
     </div>
