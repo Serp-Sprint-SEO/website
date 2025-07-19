@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "daisyui";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,6 +31,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+::-webkit-slider-thumb {
+  background-color: #fff !important;
 }
 
 .accordion-trigger {
