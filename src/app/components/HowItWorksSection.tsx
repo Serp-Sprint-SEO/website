@@ -1,7 +1,7 @@
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
+  GlobeAltIcon,
+  ClipboardDocumentCheckIcon,
+  PresentationChartBarIcon,
 } from "@heroicons/react/20/solid";
 
 export default function HowItWorksSection() {
@@ -66,7 +66,7 @@ export default function HowItWorksSection() {
             <div className="max-w-xl text-base/7 text-gray-600 lg:max-w-lg">
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon
+                  <GlobeAltIcon
                     aria-hidden="true"
                     className="mt-1 size-5 flex-none text-indigo-600"
                   />
@@ -81,7 +81,7 @@ export default function HowItWorksSection() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <LockClosedIcon
+                  <ClipboardDocumentCheckIcon
                     aria-hidden="true"
                     className="mt-1 size-5 flex-none text-indigo-600"
                   />
@@ -96,7 +96,7 @@ export default function HowItWorksSection() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <ServerIcon
+                  <PresentationChartBarIcon
                     aria-hidden="true"
                     className="mt-1 size-5 flex-none text-indigo-600"
                   />

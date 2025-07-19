@@ -1,8 +1,8 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  LinkSlashIcon,
+  ExclamationTriangleIcon,
+  ArrowDownOnSquareIcon,
+  ArrowTrendingDownIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
@@ -10,25 +10,25 @@ const features = [
     name: "Unresolved technical issues",
     description:
       "Technical errors like broken links, crawl blockages, and slow pages prevent search engines from properly indexing your site and can drag down your rankings, even if your content is great. You can't rely on tools only. You need expert developers to investigate deeper technical concerns.",
-    icon: CloudArrowUpIcon,
+    icon: ExclamationTriangleIcon,
   },
   {
     name: "Unoptimized web content",
     description:
       "If your content isn’t targeting the right keywords, doesn’t answer user intent, or is not updated for AI-powered and voice searches, you’ll struggle to stand out in today’s competitive results pages. Most SEO audits cannot identify subjective issues with the content, which can hold your site back.",
-    icon: LockClosedIcon,
+    icon: ArrowDownOnSquareIcon,
   },
   {
     name: "Incomplete SEO implementation",
     description:
       "Even the best audit is useless if recommendations aren’t fully implemented. Most teams lack the expertise to resolve technical and non-technical issues uncovered in the audits. This is why they fall short of implementing every fix, causing the expected gains never to materialize.",
-    icon: ArrowPathIcon,
+    icon: LinkSlashIcon,
   },
   {
     name: "Lack of a strategic plan",
     description:
       "Without a prioritized, actionable roadmap, you can end up focusing on low-impact tasks while missing the important updates that can bring measurable results. Ongoing, data-driven adjustments are essential to fuel continuous SEO growth, and that's exactly what most websites miss.",
-    icon: FingerPrintIcon,
+    icon: ArrowTrendingDownIcon,
   },
 ];
 

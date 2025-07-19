@@ -1,6 +1,3 @@
-import { ViewColumnsIcon } from "@heroicons/react/24/solid";
-import { WindowIcon } from "@heroicons/react/24/solid";
-import { GiftIcon } from "@heroicons/react/24/solid";
 import {
   GlobeAltIcon,
   PresentationChartLineIcon,
@@ -19,7 +16,10 @@ import {
   TrophyIcon,
   NewspaperIcon,
   MagnifyingGlassCircleIcon,
-} from "@heroicons/react/24/solid";
+  ViewColumnsIcon,
+  WindowIcon,
+  GiftIcon
+} from "@heroicons/react/24/outline";
 
 const deliverables = [
   { deliverable: "All website pages reviewed", icon: GlobeAltIcon },
@@ -28,7 +28,7 @@ const deliverables = [
     icon: PresentationChartLineIcon,
   },
   { deliverable: "Resolution of on-page SEO issues", icon: CheckBadgeIcon },
-  { deliverable: "Resolution of off-page SEO issues", icon: CheckCircleIcon },
+  { deliverable: "Resolution of off-page SEO issues", icon: DocumentChartBarIcon },
   {
     deliverable: "Resolution of technical SEO issues",
     icon: ClipboardDocumentCheckIcon,
@@ -47,7 +47,7 @@ const deliverables = [
   },
   {
     deliverable: "Internal linking review (once a month)",
-    icon: DocumentChartBarIcon,
+    icon: CheckCircleIcon,
   },
   {
     deliverable: "Site architecture review (once a month)",

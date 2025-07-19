@@ -1,7 +1,7 @@
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
+  ShieldCheckIcon,
+  PresentationChartLineIcon,
+  CursorArrowRippleIcon,
 } from "@heroicons/react/20/solid";
 
 export default function BenefitsSection() {
@@ -66,7 +66,7 @@ export default function BenefitsSection() {
             <div className="max-w-xl text-base/7 text-gray-600 lg:max-w-lg">
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon
+                  <ShieldCheckIcon
                     aria-hidden="true"
                     className="mt-1 size-5 flex-none text-indigo-600"
                   />
@@ -81,7 +81,7 @@ export default function BenefitsSection() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <LockClosedIcon
+                  <PresentationChartLineIcon
                     aria-hidden="true"
                     className="mt-1 size-5 flex-none text-indigo-600"
                   />
@@ -96,7 +96,7 @@ export default function BenefitsSection() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <ServerIcon
+                  <CursorArrowRippleIcon
                     aria-hidden="true"
                     className="mt-1 size-5 flex-none text-indigo-600"
                   />

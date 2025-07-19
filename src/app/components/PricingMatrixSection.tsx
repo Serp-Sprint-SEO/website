@@ -89,7 +89,7 @@ const rows: Record<RowDataKey, string>[] = [
 
 export default function PricingMatrixSection() {
   return (
-    <div className="bg-white">
+    <div id="pricing" className="bg-white">
       <div className="relative isolate px-6 py-24 sm:py-32 lg:px-8">
         <div
           aria-hidden="true"
@@ -106,13 +106,13 @@ export default function PricingMatrixSection() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Stop overpaying for DIY SEO
+              Our pricing matrix
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              See exactly how much time, money, and stress you save with us.
+              Our pricing depends on two things only: your website&apos;s size and the audit frequency.
             </p>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none overflow-auto">
             <table className="table-fixed">
               <thead>
                 <tr>

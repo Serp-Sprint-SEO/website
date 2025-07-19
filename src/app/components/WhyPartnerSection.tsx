@@ -1,8 +1,8 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  ArrowTrendingUpIcon,
+  ArrowsPointingInIcon,
+  ShieldCheckIcon,
+  CurrencyDollarIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
@@ -10,25 +10,25 @@ const features = [
     name: "One-stop SEO solution",
     description:
       "SERP Sprint offers an all-inclusive SEO solution. We don’t just audit your website; we identify issues and implement every fix, technical and non-technical. We also give expert insights to boost the organic taffic of your website.",
-    icon: CloudArrowUpIcon,
+    icon: ArrowsPointingInIcon,
   },
   {
     name: "Flat-rate pricing",
     description:
       "You don't need to spend thousands of dollars on SEO tools and hiring experts. With no hidden fees, hourly billing, or confusing packages, SERP Sprint offers one clear, flat-rate pricing that covers your audit and all fixes.",
-    icon: LockClosedIcon,
+    icon: CurrencyDollarIcon,
   },
   {
     name: "Expert driven results",
     description:
       "Your project is handled by seasoned SEO specialists with extensive hands-on experience across various industries. If you find an issue that came back within 30 days of our audit, we’ll fix it free. No questions asked.",
-    icon: ArrowPathIcon,
+    icon: ArrowTrendingUpIcon,
   },
   {
     name: "AI & future-proof optimization",
     description:
       "Your site is optimized for how people and search engines work today. SERP Sprint provides a clear, actionable plan to rewire your content for SGE visibility, ChatGPT answers, and featured snippets. Don’t let Google’s update bury you.",
-    icon: FingerPrintIcon,
+    icon: ShieldCheckIcon,
   },
 ];
 

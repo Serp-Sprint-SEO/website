@@ -16,7 +16,7 @@ export default function FooterSection() {
           </div>
 
           <p className="mx-auto mt-4 max-w-sm text-gray-500 text-center">
-            Start putting your software in sync today to let your business run as smooth as butter.
+            Stop burning $$$ on SEO that doesn&apos;t work
           </p>
 
           <ul className="mt-8 flex justify-center items-center gap-6">

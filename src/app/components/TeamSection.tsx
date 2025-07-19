@@ -24,10 +24,10 @@ export default function TeamSection() {
       <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
       <div className="mx-auto max-w-7xl flex flex-col gap-10 px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 text-center sm:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-center sm:text-4xl">
             Meet your SEO sprinters
           </h2>
-          <p className="mt-6 text-lg/8 text-center text-gray-600">
+          <p className="mt-6 text-lg/8 sm:text-center text-gray-600">
             At SERP Sprint, we combine deep SEO and technical expertise to
             deliver real results. You get hands-on attention, proven strategies,
             and a dedicated team focused on helping your site climb the
@@ -36,13 +36,13 @@ export default function TeamSection() {
         </div>
         <ul
           role="list"
-          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          className="grid gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 xl:col-span-2"
         >
           {people.map((person) => (
             <li key={person.name}>
-              <div className="flex items-center gap-x-6">
+              <div className="flex flex-row items-start gap-x-6">
                 <img
-                  alt=""
+                  alt={`${person.name} image`}
                   src={person.imageUrl}
                   className="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
                 />

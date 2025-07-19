@@ -126,7 +126,7 @@ export default function HeroSection() {
               Stop burning $$$ on SEO that doesn&apos;t work
             </div>
           </div>
-          <div className="text-center">
+          <div className="sm:text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Get a full SEO audit and all fixes done for you - starting at just
               $500.
@@ -138,7 +138,7 @@ export default function HeroSection() {
               technical and non-technical errors, optimizes content for humans
               and AI, and hands you a SERP-dominating machine.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center justify-center gap-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

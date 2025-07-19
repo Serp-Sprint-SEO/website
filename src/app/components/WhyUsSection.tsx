@@ -32,7 +32,7 @@ const columns = [
         src="/serp-sprint-logo.png"
         width={150}
         height={25.63}
-        alt="ButterSync Logo"
+        alt="SERP Sprint Logo"
       />
     ),
     items: [
@@ -50,6 +50,7 @@ const columns = [
 export default function WhyUsSection() {
   return (
     <div
+      id="problem"
       className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
     >
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
@@ -63,7 +64,7 @@ export default function WhyUsSection() {
             See exactly how much time, money, and stress you save with us.
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none overflow-auto">
           <table className="table-fixed">
             <thead>
               <tr>
@@ -84,10 +85,10 @@ export default function WhyUsSection() {
                   <td className="text-gray-900 p-4 border font-semibold">
                     {item}
                   </td>
-                  <td className="text-gray-900 p-4 border">
+                  <td className="text-gray-900 p-4 border min-w-48 sm:min-w-none">
                     {columns[1].items[index]}
                   </td>
-                  <td className="text-gray-900 p-4 border bg-green-50">
+                  <td className="text-gray-900 p-4 border bg-green-50 min-w-72 sm:min-w-none">
                     {columns[2].items[index]}
                   </td>
                 </tr>

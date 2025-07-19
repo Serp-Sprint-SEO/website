@@ -120,11 +120,11 @@ export default function FaqSection() {
                   className="relative lg:pl-16"
                 >
                   <AccordionTrigger className="accordion-trigger flex items-center justify-between gap-10 w-full">
-                    <p className="text-base font-semibold leading-7 text-gray-900">
+                    <p className="text-base text-left font-semibold leading-7 text-gray-900">
                       {faq.question}
                     </p>
-                    <ChevronUpIcon className="chevron-up-icon w-5 h-5 text-gray-900" />
-                    <ChevronDownIcon className="chevron-down-icon w-5 h-5 text-indigo-900" />
+                    <ChevronUpIcon className="chevron-up-icon w-5 h-5 text-gray-900 shrink-0" />
+                    <ChevronDownIcon className="chevron-down-icon w-5 h-5 text-indigo-900 shrink-0" />
                   </AccordionTrigger>
                   <AccordionContent className="accordion-content max-w-2xl">
                     <p className="mt-2 text-base font-light leading-7 text-gray-600">

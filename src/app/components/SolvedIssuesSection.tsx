@@ -1,8 +1,8 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  ClipboardDocumentListIcon,
+  DocumentMagnifyingGlassIcon,
+  ComputerDesktopIcon,
+  DocumentTextIcon,
 } from "@heroicons/react/24/outline";
 
 import {
@@ -28,7 +28,7 @@ const features = [
       "Orphan pages",
       "Excessive redirects",
     ],
-    icon: CloudArrowUpIcon,
+    icon: DocumentMagnifyingGlassIcon,
   },
   {
     title: "On-page SEO issues",
@@ -48,7 +48,7 @@ const features = [
       "Pages with only one or no internal links",
       "Noindex tags on important pages",
     ],
-    icon: LockClosedIcon,
+    icon: DocumentTextIcon,
   },
   {
     title: "Off-page SEO errors",
@@ -63,7 +63,7 @@ const features = [
       "Competitor backlink & keyword benchmarking",
       "Spam backlinks & negative SEO attacks",
     ],
-    icon: ArrowPathIcon,
+    icon: ClipboardDocumentListIcon,
   },
   {
     title: "Design, HTML, and UX Flaws",
@@ -78,13 +78,13 @@ const features = [
       "UX problems affecting engagement & bounce rates",
       "Security warnings and missing HTTPS lock icon",
     ],
-    icon: FingerPrintIcon,
+    icon: ComputerDesktopIcon,
   },
 ];
 
 export default function SolvedIssuesSection() {
   return (
-    <div className="bg-slate-50 py-24 sm:py-32">
+    <div id="solution" className="bg-slate-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -113,7 +113,7 @@ export default function SolvedIssuesSection() {
                 <ul className="flex flex-col gap-4 mt-8">
                   {feature.list.map((item) => (
                     <li key={item} className="flex gap-2 items-center">
-                        <CheckCircleIcon className="h-6 w-6 text-green-500" />
+                        <CheckCircleIcon className="h-6 w-6 text-green-500 shrink-0" />
                         <span className="text-gray-900">{item}</span>
                     </li>
                   ))}
