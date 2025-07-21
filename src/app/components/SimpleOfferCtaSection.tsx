@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SimpleOfferCtaSection() {
   return (
@@ -36,12 +37,12 @@ export default function SimpleOfferCtaSection() {
               better rankings.
             </p>
             <div className="mt-10">
-              <a
-                href="#"
+              <Link
+                href="book-seo-audit"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Audit my site
-              </a>
+              </Link>
             </div>
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">

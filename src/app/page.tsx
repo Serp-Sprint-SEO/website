@@ -9,7 +9,6 @@ import BenefitsSection from "@/app/components/BenefitsSection";
 import WhySeoNotWorkingSection from "@/app/components/WhySeoNotWorkingSection";
 import WorkWithUsCtaSection from "@/app/components/WorkWithUsCtaSection";
 import SimpleOfferCtaSection from "@/app/components/SimpleOfferCtaSection";
-import SuperchargeWebsiteSeoCtaSection from "@/app/components/SuperchargeWebsiteSeoCtaSection";
 import FixBrokenSeoCtaSection from "@/app/components/FixBrokenSeoCtaSection";
 import WhyUsSection from "@/app/components/WhyUsSection";
 import DeliverableSection from "@/app/components/DeliverableSection";
@@ -27,7 +26,6 @@ export default function Home() {
       <SolvedIssuesSection />
       <BenefitsSection />
       <WhySeoNotWorkingSection />
-      <SuperchargeWebsiteSeoCtaSection />
       <PricingMatrixSection />
       <DeliverableSection />
       <FixBrokenSeoCtaSection />

@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SerpSprintSeo",
-  description: "SEO audit agency that helps website stay on track",
+  title: "SERP Sprint Seo",
+  description:
+    "Stop wasting money on SEO tools, freelancers, or risky DIY fixes. With SERP Sprint, you get a full SEO audit, expert fixes for every technical and non-technical issue, and a clear path to higher rankings, starting at just $500.",
 };
 
 export default function RootLayout({

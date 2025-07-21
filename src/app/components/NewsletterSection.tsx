@@ -1,6 +1,42 @@
-import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
+"use client";
+
+import {
+  ArrowPathIcon,
+  CalendarDaysIcon,
+  HandRaisedIcon,
+} from "@heroicons/react/24/outline";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { FormEvent, useState } from "react";
 
 export default function NewsletterSection() {
+  const [email, setEmail] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (event: FormEvent) => {
+    event.preventDefault();
+    setIsLoading(true);
+    try {
+      const response = await fetch("/api/newsletter",
+        {
+          method: "POST",
+          body: JSON.stringify({ email }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      console.log(response);
+      if (response.status === 200) {
+        setIsSubmitted(true);
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -15,7 +51,10 @@ export default function NewsletterSection() {
               community and never miss out on the latest ways to boost your
               rankings and grow your traffic.
             </p>
-            <div className="mt-6 flex max-w-md gap-x-4">
+            <form
+              onSubmit={handleSubmit}
+              className="mt-6 flex max-w-md gap-x-4"
+            >
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>
@@ -27,14 +66,27 @@ export default function NewsletterSection() {
                 placeholder="Enter your email"
                 autoComplete="email"
                 className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={isSubmitted}
               />
               <button
+                disabled={isLoading || isSubmitted}
                 type="submit"
-                className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className={`flex justify-center gap-x-2 rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 ${
+                  isSubmitted ? "bg-green-700" : "bg-indigo-500 hover:bg-indigo-400"
+                }`}
               >
-                Subscribe now
+                {isLoading && (
+                  <ArrowPathIcon className="w-5 h-5 text-white animate-spin" />
+                )}
+                {isSubmitted && (
+                  <CheckCircleIcon className="w-5 h-5 text-white" />
+                )}
+                {!isLoading && !isSubmitted && "Subscribe now"}
+                {isSubmitted && "Subscribed"}
               </button>
-            </div>
+            </form>
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
             <div className="flex flex-col items-start">
@@ -46,7 +98,8 @@ export default function NewsletterSection() {
               </div>
               <dt className="mt-4 font-semibold text-white">Weekly articles</dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Get fresh, actionable SEO articles in your inbox every week and never miss an update.
+                Get fresh, actionable SEO articles in your inbox every week and
+                never miss an update.
               </dd>
             </div>
             <div className="flex flex-col items-start">
@@ -58,7 +111,8 @@ export default function NewsletterSection() {
               </div>
               <dt className="mt-4 font-semibold text-white">No spam</dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                We respect your inbox. You&apos;ll only get valuable content with no promotions or clutter.
+                We respect your inbox. You&apos;ll only get valuable content
+                with no promotions or clutter.
               </dd>
             </div>
           </dl>

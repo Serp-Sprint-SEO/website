@@ -1,4 +1,6 @@
 "use client";
+
+import Link from "next/link";
 import { useState } from "react";
 
 const auditFrequencies: string[] = ["monthly", "bimonthly", "weekly"];
@@ -23,9 +25,15 @@ export default function PricingMatrixSection() {
       totalAmount = totalAmount * 2;
     }
 
+    if (numberOfPages === 500) {
+      return "Custom Quote";
+    }
+
     const formattedAmount = totalAmount.toLocaleString("en-US", {
       style: "currency",
       currency: "USD",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
     });
 
     return formattedAmount;
@@ -34,7 +42,7 @@ export default function PricingMatrixSection() {
   return (
     <div id="pricing" className="bg-stone-50">
       <div className="relative isolate px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Our pricing matrix
@@ -157,13 +165,13 @@ export default function PricingMatrixSection() {
             <div className="bg-white border p-8 rounded-lg">
               <div className="flex flex-col items-center gap-y-4">
                 <span className="text-gray-600 text-sm">
-                  Your website audit price
+                  Your pricing package per month
                 </span>
-                <span className="text-gray-900 text-6xl font-semibold">
+                <span className="text-gray-900 text-4xl md:text-6xl font-semibold text-center">
                   {calculateAuditPrice()}
                 </span>
               </div>
-              <hr className="mt-10" />
+              <hr className="mt-6 md:mt-10" />
               <div className="flex justify-between mt-4">
                 <span className="text-gray-600 font-medium">
                   Number of pages
@@ -182,12 +190,14 @@ export default function PricingMatrixSection() {
                 </span>
               </div>
               <hr className="mt-4" />
-              <button
-                onClick={() => {}}
-                className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-4 text-center text-md text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              <Link
+                href="book-seo-audit"
+                className="mt-6 md:mt-10 block w-full rounded-md bg-indigo-600 px-3 py-4 text-center text-md text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Start my SEO audit
-              </button>
+                {Number(pages) === 500
+                  ? "Get custom quote"
+                  : "Start my SEO audit"}
+              </Link>
             </div>
           </div>
         </div>
