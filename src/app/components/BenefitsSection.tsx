@@ -3,6 +3,7 @@ import {
   PresentationChartLineIcon,
   CursorArrowRippleIcon,
 } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 export default function BenefitsSection() {
   return (
@@ -22,11 +23,11 @@ export default function BenefitsSection() {
           </div>
         </div>
         <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img
-            alt="Problem image"
+          <Image
+            alt="Dashboard showing AI citation statistics for various AI models including Google AIO, ChatGPT, Perplexity, and Gemini, indicating the agency's expertise in AI-driven content and SEO strategies."
             width={1600}
             height={1080}
-            src="/serp-2.jpeg"
+            src="/benefits.png"
             className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
         </div>

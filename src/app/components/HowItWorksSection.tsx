@@ -3,6 +3,7 @@ import {
   ClipboardDocumentCheckIcon,
   PresentationChartBarIcon,
 } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 export default function HowItWorksSection() {
   return (
@@ -22,12 +23,12 @@ export default function HowItWorksSection() {
           </div>
         </div>
         <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img
-            alt="Problem image"
+          <Image
+            alt="Infographic displaying high SEO performance scores: an On-Page Score of 95, Performance 92, Accessibility 94, SEO 99, and Best Practices 99, illustrating the strong results an SEO agency can achieve."
             width={1600}
             height={1080}
-            src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
-            className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            src="/how-it-works.png"
+            className="w-[48rem] max-w-none rounded-xl bg-indigo-700 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">

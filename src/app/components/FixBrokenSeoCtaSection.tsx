@@ -45,10 +45,10 @@ export default function FixBrokenSeoCtaSection() {
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
             <Image
-              src="/serp-3.jpeg"
+              src="/broken-seo.png"
               width={1600}
               height={722}
-              alt="CTA"
+              alt="Screenshot of an SEO audit dashboard showing various on-page issues like large image file sizes, broken links, 404 errors, and slow pages, highlighting common problems an SEO agency fixes."
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5"
             />
           </div>

@@ -45,10 +45,10 @@ export default function WorkWithUsCtaSection() {
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
             <Image
-              src="/CTA-image.png"
+              src="/work-with-us.png"
               width={1600}
               height={722}
-              alt="CTA"
+              alt="A diverse group of five smiling professionals collaborating around a table with laptops and documents, depicting teamwork and a positive work environment at an SEO agency."
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5"
             />
           </div>

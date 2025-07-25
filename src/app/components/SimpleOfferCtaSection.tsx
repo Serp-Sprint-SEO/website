@@ -47,10 +47,10 @@ export default function SimpleOfferCtaSection() {
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
             <Image
-              src="/CTA-image.png"
+              src="/health-score.png"
               width={1600}
               height={722}
-              alt="CTA"
+              alt="A 'Health Score' meter showing an excellent score of 99, reflecting the high proportion of internal URLs on a site without errors, demonstrating the effectiveness of an SEO agency's site optimization services."
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5"
             />
           </div>
