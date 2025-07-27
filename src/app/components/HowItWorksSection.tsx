@@ -3,11 +3,31 @@ import {
   ClipboardDocumentCheckIcon,
   PresentationChartBarIcon,
 } from "@heroicons/react/20/solid";
-import Image from "next/image";
+import { getImageProps } from "next/image";
 
 export default function HowItWorksSection() {
+  const common = { alt: "Art Direction Example", sizes: "100vw" };
+  const {
+    props: { srcSet: desktop },
+  } = getImageProps({
+    ...common,
+    width: 1600,
+    height: 1080,
+    src: "/how-it-works.png",
+  });
+  const {
+    props: { srcSet: mobile, ...rest },
+  } = getImageProps({
+    ...common,
+    width: 1031,
+    height: 731,
+    src: "/how-it-works-m.png",
+  });
   return (
-    <div id="how-it-works" className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div
+      id="how-it-works"
+      className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+    >
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
@@ -23,13 +43,15 @@ export default function HowItWorksSection() {
           </div>
         </div>
         <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <Image
-            alt="Infographic displaying high SEO performance scores: an On-Page Score of 95, Performance 92, Accessibility 94, SEO 99, and Best Practices 99, illustrating the strong results an SEO agency can achieve."
-            width={1600}
-            height={1080}
-            src="/how-it-works.png"
-            className="w-[48rem] max-w-none rounded-xl bg-indigo-700 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-          />
+          <picture>
+            <source media="(min-width: 1000px)" srcSet={desktop} />
+            <source media="(min-width: 500px)" srcSet={mobile} />
+            <img
+              {...rest}
+              alt="Infographic displaying high SEO performance scores: an On-Page Score of 95, Performance 92, Accessibility 94, SEO 99, and Best Practices 99, illustrating the strong results an SEO agency can achieve."
+              className="w-[48rem] max-w-none rounded-xl bg-indigo-700 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            />
+          </picture>
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">

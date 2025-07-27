@@ -1,7 +1,24 @@
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import Link from "next/link";
 
 export default function SimpleOfferCtaSection() {
+  const common = { alt: "Art Direction Example", sizes: "100vw" };
+  const {
+    props: { srcSet: desktop },
+  } = getImageProps({
+    ...common,
+    width: 1285,
+    height: 800,
+    src: "/health-score-w.png",
+  });
+  const {
+    props: { srcSet: mobile, ...rest },
+  } = getImageProps({
+    ...common,
+    width: 490,
+    height: 534,
+    src: "/health-score-m.png",
+  });
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -33,8 +50,8 @@ export default function SimpleOfferCtaSection() {
             <p className="mt-6 text-lg leading-8 text-gray-300">
               You can spend thousands and waste weeks doing SEO the hard way. Or
               you can let our experts audit your site and fix every issue for
-              just $500, in 7 days. It&apos;s simple math: less money, less hassle,
-              better rankings.
+              just $500, in 7 days. It&apos;s simple math: less money, less
+              hassle, better rankings.
             </p>
             <div className="mt-10">
               <Link
@@ -46,13 +63,15 @@ export default function SimpleOfferCtaSection() {
             </div>
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
-            <Image
-              src="/health-score.png"
-              width={1600}
-              height={722}
-              alt="A 'Health Score' meter showing an excellent score of 99, reflecting the high proportion of internal URLs on a site without errors, demonstrating the effectiveness of an SEO agency's site optimization services."
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5"
-            />
+            <picture>
+              <source media="(min-width: 1000px)" srcSet={desktop} />
+              <source media="(min-width: 500px)" srcSet={mobile} />
+              <img
+                {...rest}
+                alt="A 'Health Score' meter showing an excellent score of 99, reflecting the high proportion of internal URLs on a site without errors, demonstrating the effectiveness of an SEO agency's site optimization services."
+                className="absolute left-0 top-0 w-[35rem] sm:w-[57rem] max-w-none rounded-md"
+              />
+            </picture>
           </div>
         </div>
       </div>

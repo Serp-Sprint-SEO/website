@@ -5,7 +5,7 @@ const people = [
     description:
       "With nearly a decade of hands-on SEO experience, Zakki has orchestrated SEO turnarounds for hundreds of brands – from startups to well-established companies. He’s cracked Google’s core updates for multiple clients, driving organic traffic surges. His audit frameworks are battle-tested against thousands of pages. Specializing in advanced SEO audits and content optimization, he combines data-driven strategies with practical execution to deliver measurable results.",
     imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "/zakki-sohail.png",
   },
   {
     name: "Arslan Khalid",
@@ -13,7 +13,7 @@ const people = [
     description:
       "Bringing more than 7 years of expertise in development and design, Arslan rebuilds websites that Google loves. His hybrid dev-SEO approach slashes load times while crushing Core Web Vitals. Arslan ensures that technical SEO issues are resolved seamlessly while enhancing site performance and user experience. His deep knowledge of web technologies provides a full-spectrum solution that optimizes both search engine rankings and website usability.",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "/arslan-khalid.png",
   },
 ];
 

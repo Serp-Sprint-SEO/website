@@ -102,7 +102,7 @@ export default function WhyUsSection() {
                       {data[0].items[titleRow]}
                     </td>
                     <td
-                      className={`text-gray-900 p-4 border bg-green-50 min-w-72 sm:min-w-none ${
+                      className={`text-gray-900 p-4 border bg-green-50 min-w-24 sm:min-w-none ${
                         index === titleRows.length - 1
                           ? "font-semibold text-center"
                           : ""

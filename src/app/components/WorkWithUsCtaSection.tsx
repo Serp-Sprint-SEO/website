@@ -1,7 +1,24 @@
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import Link from "next/link";
 
 export default function WorkWithUsCtaSection() {
+  const common = { alt: "Art Direction Example", sizes: "100vw" };
+  const {
+    props: { srcSet: desktop },
+  } = getImageProps({
+    ...common,
+    width: 1600,
+    height: 722,
+    src: "/work-with-us.png",
+  });
+  const {
+    props: { srcSet: mobile, ...rest },
+  } = getImageProps({
+    ...common,
+    width: 789,
+    height: 522,
+    src: "/work-with-us-m.png",
+  });
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -44,13 +61,15 @@ export default function WorkWithUsCtaSection() {
             </div>
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
-            <Image
-              src="/work-with-us.png"
-              width={1600}
-              height={722}
-              alt="A diverse group of five smiling professionals collaborating around a table with laptops and documents, depicting teamwork and a positive work environment at an SEO agency."
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5"
-            />
+            <picture>
+              <source media="(min-width: 1000px)" srcSet={desktop} />
+              <source media="(min-width: 500px)" srcSet={mobile} />
+              <img
+                {...rest}
+                alt="A diverse group of five smiling professionals collaborating around a table with laptops and documents, depicting teamwork and a positive work environment at an SEO agency."
+                className="absolute left-0 top-0 w-[35rem] sm:w-[57rem] max-w-none rounded-md bg-white/5"
+              />
+            </picture>
           </div>
         </div>
       </div>
