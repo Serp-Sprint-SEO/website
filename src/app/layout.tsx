@@ -7,7 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "SERP Sprint Seo",
   description:
-    "Stop wasting money on SEO tools, freelancers, or risky DIY fixes. With SERP Sprint, you get a full SEO audit, expert fixes for every technical and non-technical issue, and a clear path to higher rankings, starting at just $500.",
+    "Stop wasting money on SEO tools, freelancers, or risky DIY fixes. With SERP Sprint, you get a full SEO audit alongwith expert fixes, starting at just $500.",
+  verification: {
+    google: "ytNIzxTvLWMJ_p9wiZZLcTr6yn7QImZRMIbcysKwPMo",
+  },
 };
 
 export default function RootLayout({
