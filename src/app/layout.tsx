@@ -12,6 +12,23 @@ export const metadata: Metadata = {
   verification: {
     google: "ytNIzxTvLWMJ_p9wiZZLcTr6yn7QImZRMIbcysKwPMo",
   },
+  metadataBase: new URL('https://serpsprintseo.com'),
+  alternates: {
+    canonical: "/"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 const professionalServiceSchema = {
